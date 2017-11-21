@@ -102,7 +102,7 @@ span.psw {
     right: 25px;
     top: 0;
     color: #000;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -129,40 +129,33 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 120px) {
     span.psw {
        display: block;
        float: none;
     }
     .cancelbtn {
-       width: 100%;
+       width: 70%;
     }
 }
 </style>
 <body>
-
 <p>Superheroes need to login in first</p>
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
 <div id="id01" class="modal">
-  
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="https://i0.wp.com/www.financesuperhero.com/wp-content/uploads/2016/03/cropped-superhero3.png" alt="Avatar" class="avatar">
     </div>
-
     <div class="container">
       <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
-
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-        
       <button type="submit">Login</button>
       <input type="checkbox" checked="checked"> Remember me
     </div>
-
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
