@@ -624,3 +624,77 @@ body {
 
 </body>
 </html>
+html,
+body{
+	height: 100%;
+	margin: 0;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.artwork{
+	display: inline-block;
+	width: 15em;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;	
+	box-shadow: 0 .3em .7em rgba(0,0,0,.25);
+	margin: 1em;
+	
+	-webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+	
+	&:before{
+		content: ''; 
+		position: absolute; 
+		width: 100%; 
+		height: 100%;
+		z-index: 2;
+		background: url(https://res.cloudinary.com/amogl/image/upload/v1489850644/Codepen/Disks/shine.png) center no-repeat;
+		background-size: cover;
+		mix-blend-mode:  overlay;
+		border-radius: 50%; //safari fox
+	}
+	&:after{
+		content: '';
+		padding: .5em;
+		background: white;
+		z-index: 10;
+		position: absolute;
+		top: 50%; 
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		box-shadow: inset 0 .2em .2em rgba(0,0,0,.25);
+	}
+	img{
+		display: block;
+		width: 100%; 
+		height: auto;
+		animation: spin 3s infinite linear;
+		border-radius: 50%; //safari fix
+	}
+}
+
+
+@keyframes spin{
+	to{
+		transform: rotate(360deg);
+	}
+}
+<div class="artwork">
+  <img src="http://www.greencrossaustralia.org/media/27644/hand.png">
+</div>  
+
+<div class="artwork">
+  <img src="http://www.pngmart.com/files/3/Health-PNG-File.png">
+</div>  
+
+<div class="artwork">
+  <img src="http://www.dimarefresh.com/images/button/sustainability.png">
+</div>  
