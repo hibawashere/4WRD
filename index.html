@@ -446,8 +446,6 @@ marker.setMap(map);
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqW48OAgh7fMtP8_IFiSua1Jgg7jIVxM4&callback=myMap"></script>
 <!--
-To use this code on your website, get a free API key from Google.
-Read more at: http://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 <!-- Footer -->
@@ -455,9 +453,8 @@ Read more at: http://www.w3schools.com/graphics/google_maps_basic.asp
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-<a href="https://twitter.com/intent/tweet?screen_name=TwitterDev&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a href="https://twitter.com/" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-<a href="https://www.facebook.com/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+<a href="https://twitter.com/" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+<a href="https://www.facebook.com/" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
 <a href="https://www.youtube.com/" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a>
 <a href="https://www.instagram.com/" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a>
 </footer>
@@ -503,12 +500,12 @@ body {
 /* Wrapper */
 .icon-button {
 	background-color: white;
-	border-radius: 2.6rem;
+	border-radius: 5rem;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1.3rem;
-	height: 2.6rem;
-	line-height: 2.6rem;
+	font-size: 4rem;
+	height: 5rem;
+	line-height: 5rem;
 	margin: 0 5px;
 	position: relative;
 	text-align: center;
@@ -516,7 +513,7 @@ body {
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
-	width: 2.6rem;
+	width: 5rem;
 }
 
 /* Circle */
@@ -535,9 +532,9 @@ body {
 	width: 0;
 }
 .icon-button:hover span {
-	width: 2.6rem;
-	height: 2.6rem;
-	border-radius: 2.6rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
 	margin: -1.3rem;
 }
 
@@ -545,16 +542,16 @@ body {
 .icon-button i {
 	background: none;
 	color: white;
-	height: 2.6rem;
+	height: 5rem;
 	left: 0;
-	line-height: 2.6rem;
+	line-height: 5rem;
 	position: absolute;
 	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 2.6rem;
+	-webkit-transition: all 0.7s;
+	   -moz-transition: all 0.7s;
+	     -o-transition: all 0.7s;
+	        transition: all 0.7s;
+	width: 5rem;
 	z-index: 10;
 }
 
@@ -578,14 +575,11 @@ body {
 	background-color: #bb0000;
 }
 
-.icon-button .icon-twitter {
+.icon-button .fa-twitter {
 	color: #4099ff;
 }
-.icon-button .icon-facebook {
+.icon-button .fa-facebook {
 	color: #3B5998;
-}
-.icon-button .icon-google-plus {
-	color: #db5a3c;
 }
 .icon-button .fa-instagram {
 	color: #517fa4;
@@ -596,7 +590,6 @@ body {
 
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus,
 .icon-button:hover .fa-youtube,
 .icon-button:hover .fa-instagram,
 {
